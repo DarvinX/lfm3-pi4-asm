@@ -1,0 +1,8 @@
+/build/
+/models/
+/results/
+/llama.cpp/
+*.gguf
+*.tar.gz
+__pycache__/
+.venv/
