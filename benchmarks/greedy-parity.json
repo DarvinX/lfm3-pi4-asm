@@ -1,0 +1,53 @@
+{
+  "scope": "historical physical Pi correctness runs against the canonical llama.cpp outputs",
+  "cases": [
+    {
+      "case": "short-0",
+      "prompt": "Hello world!",
+      "prompt_tokens": 3,
+      "greedy_tokens_matched": 128,
+      "token_ids_sha256": "8b7f462ce52aa3c708935a7287600801d4cd77b1fc73be2a0b2a8e832e793cb5",
+      "decoded_sha256": "8970e0f1892ec47dad01e46f36377d9b86e9e6ba25c7d3d0aadfaf1ac05a31d8"
+    },
+    {
+      "case": "short-1",
+      "prompt": "Write a detailed guide to growing tomatoes in a home garden:",
+      "prompt_tokens": 12,
+      "greedy_tokens_matched": 128,
+      "token_ids_sha256": "f4d6ea851feeeacfa908e9e75cbe63e3123e84638f0fcc9b5f04ef181d9349e4",
+      "decoded_sha256": "7e4c66f48b33880bb85a5749dd4fc4dcd384b6baf212d1294996eb9ad7e50b47"
+    },
+    {
+      "case": "short-2",
+      "prompt": "Explain how rain forms and why some clouds produce thunderstorms:",
+      "prompt_tokens": 12,
+      "greedy_tokens_matched": 128,
+      "token_ids_sha256": "8120d7b7eaf9d64d059e17a2449e107a8b4a6946ebcd83c761768ed0dea4c6df",
+      "decoded_sha256": "3a216394411a82494a2eebfa3185e246b9d619de7381e95b150a8e6bd3ab32e4"
+    },
+    {
+      "case": "long-0",
+      "prompt": "This is a short note. This is a short note. This is a short note. This is a short note. This is a short note. This is a short note. This is a short note. This is a short note. This is a short note. This is a short note. This is a short note. This is a short note. This is a short note. This is a short note. This is a short note. This is a short note. This is a short note. This is a short note. This is a short note. This is a short note. This is a short note. This is a short note. This is a short note. This is a short note. This is a short note. This is a short note. This is a short note. This is a short note. This is a short note. This is a short note. This is a short note. This is a short note. This is a short note. This is a short note. This is a short note. This is a short note. This is a short note. This is a short note. This is a short note. This is a short note. This is a short note. This is a short note. This is a short note. This is a short note. Explain why rain falls from clouds.",
+      "prompt_tokens": 271,
+      "greedy_tokens_matched": 128,
+      "token_ids_sha256": "f152a39dd733315e8614898795cb6ff10f61fb4842d90f98620ff79240afbc70",
+      "decoded_sha256": "d1aa9e7969a4aae13affbca7ec41ac956e164928107a628b380987ccaecc3cd4"
+    },
+    {
+      "case": "long-1",
+      "prompt": "0 1 2 3 4 5 6 7 8 9. 0 1 2 3 4 5 6 7 8 9. 0 1 2 3 4 5 6 7 8 9. 0 1 2 3 4 5 6 7 8 9. 0 1 2 3 4 5 6 7 8 9. 0 1 2 3 4 5 6 7 8 9. 0 1 2 3 4 5 6 7 8 9. 0 1 2 3 4 5 6 7 8 9. 0 1 2 3 4 5 6 7 8 9. 0 1 2 3 4 5 6 7 8 9. 0 1 2 3 4 5 6 7 8 9. 0 1 2 3 4 5 6 7 8 9. 0 1 2 3 4 5 6 7 8 9. 0 1 2 3 4 5 6 7 8 9. What is a prime number? Explain with examples.",
+      "prompt_tokens": 303,
+      "greedy_tokens_matched": 128,
+      "token_ids_sha256": "4ba187be1b51aa891f541e0625f38d97ea3d25bf527b480672557fb80904b05c",
+      "decoded_sha256": "27a235fd04d392de3985056df1ccc1c771ea05e5b02e572d2e1cd611c18fe7ed"
+    },
+    {
+      "case": "long-2",
+      "prompt": "The gardener checks the soil each morning. The gardener checks the soil each morning. The gardener checks the soil each morning. The gardener checks the soil each morning. The gardener checks the soil each morning. The gardener checks the soil each morning. The gardener checks the soil each morning. The gardener checks the soil each morning. The gardener checks the soil each morning. The gardener checks the soil each morning. The gardener checks the soil each morning. The gardener checks the soil each morning. The gardener checks the soil each morning. The gardener checks the soil each morning. The gardener checks the soil each morning. The gardener checks the soil each morning. The gardener checks the soil each morning. The gardener checks the soil each morning. The gardener checks the soil each morning. The gardener checks the soil each morning. The gardener checks the soil each morning. The gardener checks the soil each morning. The gardener checks the soil each morning. The gardener checks the soil each morning. The gardener checks the soil each morning. The gardener checks the soil each morning. The gardener checks the soil each morning. The gardener checks the soil each morning. The gardener checks the soil each morning. The gardener checks the soil each morning. The gardener checks the soil each morning. The gardener checks the soil each morning. The gardener checks the soil each morning. The gardener checks the soil each morning. The gardener checks the soil each morning. The gardener checks the soil each morning. Describe how to water tomato plants.",
+      "prompt_tokens": 331,
+      "greedy_tokens_matched": 128,
+      "token_ids_sha256": "8985db4ad799d2bf8f66c252c12ef62a243c0d4c88a11bb999acba87b8da229c",
+      "decoded_sha256": "0d8f60f055ff95853abb6c9fee836058058fcd62f720e0574129666fe5f3935e"
+    }
+  ]
+}

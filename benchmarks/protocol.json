@@ -1,0 +1,52 @@
+{
+  "board": "Raspberry Pi 4 Model B Rev 1.5",
+  "benchmark_runner_sha256": "216c381a7e43a7b3017cc557b92447c0550f184dc1d7220a5fee07edc3f73eb6",
+  "pmu_runner_sha256": "46742fc3cb9a6e4f497c32b0758ced05b5ce8445706b9e6d867ea3b85e0846a4",
+  "cpu_affinity": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "threads": 4,
+  "model_sha256": "3793e1e6e2266919d6e015287221b41100175a98eddaba92e111aed3b05c93c4",
+  "asm_sha256": "2cb80a9be030829c539e7623438f753e7f99f78d40699ae4de5a668e5c2830b4",
+  "llama_sha256": "6f47063c364bd72032b979b4fe89588324f9408d9c67ec30994a0dd2324eb7f1",
+  "context": 512,
+  "kv_cache_dtype": "float32 in both engines",
+  "flash_attention": "off",
+  "prefill": "serial tokens; vocabulary projection only at final prompt token",
+  "activations": {
+    "selected-h42": "Q8_K",
+    "pinned-cpp-3t": "Q8_K"
+  },
+  "repeat": 3,
+  "cache_state": "warm model file pages; fresh process and cache state per run",
+  "decode_rate_definition": "(generated tokens - 1) / decode_seconds; first output uses prefill logits",
+  "memory_definition": "getrusage peak RSS; smaps_rollup at registered role cadence;100ms VmRSS/VmSwap/MemAvailable sampling",
+  "memory_sample_interval_seconds": 0.1,
+  "smaps_sample_intervals_seconds": {
+    "selected-h42": 5.0,
+    "pinned-cpp-3t": 5.0
+  },
+  "eos_policy": "ignore EOS in both for fixed-size throughput measurement",
+  "worker_counts_requested": {
+    "selected-h42": {
+      "prefill": 4,
+      "decode": 3
+    },
+    "pinned-cpp-3t": {
+      "prefill": 4,
+      "decode": 3
+    }
+  },
+  "ttft_definition": "main request start to first nonempty token piece fully written to stdout; includes tokenization, loading, prompt processing, argmax and output; excludes exec/loader before main",
+  "full_process_time_definition": "parent launch to observed child exit; includes cleanup and up to100ms polling delay, separate from in-process request time",
+  "pmu_enabled": true,
+  "pmu_profile": "memory",
+  "verification_modes_requested": {
+    "selected-h42": 0,
+    "pinned-cpp-3t": null
+  },
+  "hardware_notes": "4 GB Raspberry Pi 4 Model B Rev 1.5, Cortex-A72; 1.8 GHz observed under the existing ondemand governor"
+}

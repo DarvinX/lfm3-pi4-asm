@@ -1,0 +1,20 @@
+{
+  "scope": "one projection from the original checkpoint, measured on the physical Pi 4",
+  "projection": "gate-2048x7680",
+  "replicates_per_path": 3,
+  "median_ms": {
+    "resident_vulkan": 53.671464719,
+    "arm_three_workers": 2.466844852
+  },
+  "range_ms": {
+    "resident_vulkan": [
+      53.655426406,
+      53.719732375
+    ],
+    "arm_three_workers": [
+      2.400948369,
+      2.5132934430000002
+    ]
+  },
+  "protocol": "Resident weights, pipeline and command buffers; complete projection calls. Component measurement only."
+}

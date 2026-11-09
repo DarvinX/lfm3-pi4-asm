@@ -1,0 +1,21 @@
+{
+  "scope": "external correctness test fingerprints only; never supplied to inference children",
+  "tokens": 128,
+  "mode": "greedy argmax; seeds recorded but no random draws",
+  "model_sha256": "3793e1e6e2266919d6e015287221b41100175a98eddaba92e111aed3b05c93c4",
+  "canonical_binary_sha256": "9693fb08c247e1d3a4a8644daa5aced5cacc52fef0ac8b40d79b535565ea1516",
+  "cases": {
+    "guide": {
+      "prompt": "Write a detailed guide to growing tomatoes in a home garden:",
+      "seed_recorded": 1234,
+      "token_ids_sha256": "f4d6ea851feeeacfa908e9e75cbe63e3123e84638f0fcc9b5f04ef181d9349e4",
+      "decoded_sha256": "7e4c66f48b33880bb85a5749dd4fc4dcd384b6baf212d1294996eb9ad7e50b47"
+    },
+    "weather": {
+      "prompt": "Explain how rain forms and why some clouds produce thunderstorms:",
+      "seed_recorded": 20261108,
+      "token_ids_sha256": "8120d7b7eaf9d64d059e17a2449e107a8b4a6946ebcd83c761768ed0dea4c6df",
+      "decoded_sha256": "3a216394411a82494a2eebfa3185e246b9d619de7381e95b150a8e6bd3ab32e4"
+    }
+  }
+}
